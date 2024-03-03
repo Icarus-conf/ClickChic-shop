@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:clickchic/components/button.dart';
 import 'package:clickchic/components/text_format.dart';
+import 'package:clickchic/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -41,7 +42,9 @@ class _ConfirmCodeState extends State<ConfirmCode> {
                     'To the number +531531555 sent a \nsms with a code. Enter it below.',
                 color: Colors.grey[500],
               ),
-              const Spacer(),
+              const SizedBox(
+                height: 25,
+              ),
               PinCodeTextField(
                 appContext: context,
                 length: 4,
@@ -89,7 +92,7 @@ class _ConfirmCodeState extends State<ConfirmCode> {
                     color: Colors.white,
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, ConfirmCode.routeName);
+                    Navigator.pushNamed(context, HomePage.routeName);
                   },
                   bgColor: Colors.black,
                 ),

@@ -63,8 +63,7 @@ class _StartPageState extends State<StartPage> {
                 ),
                 const Spacer(),
                 SizedBox(
-                  height: 60,
-                  width: 60,
+                  height: 50,
                   child: ElevatedButton(
                     onPressed: () {
                       _pageController.nextPage(
