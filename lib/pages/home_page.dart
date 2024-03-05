@@ -115,10 +115,10 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      padding: const EdgeInsets.all(25),
+                      padding: const EdgeInsets.all(12),
                       margin: const EdgeInsets.all(8),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Row(
@@ -134,14 +134,14 @@ class _HomePageState extends State<HomePage> {
                                 ],
                               ),
                               Icon(
-                                Icons.favorite,
+                                Icons.favorite_outline,
                                 size: 20,
                               ),
                             ],
                           ),
                           Image.asset(
                             'assets/images/bag.png',
-                            height: 50,
+                            height: 70,
                             width: 100,
                           ),
                           const PoppinsText(
